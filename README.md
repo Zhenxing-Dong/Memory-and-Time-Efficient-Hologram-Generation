@@ -1,1 +1,1 @@
-# Memory-and-Time-Efficient-Hologram-Generation
+## Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays
