@@ -1,4 +1,7 @@
 ## Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays [IEEE VR 2024]
 
-Come soon!
+## Training
+ python train.py
+## Testing
 
+## 
