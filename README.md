@@ -1,5 +1,6 @@
 ## Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays
 
+
 ## Setup 
 Install the required packages using conda with the provided [environment.yaml](https://github.com/Zhenxing-Dong/Memory-and-Time-Efficient-Hologram-Generation/blob/main/environment.yaml) file.
 
