@@ -1,7 +1,7 @@
 ## Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays [IEEE VR 2024]
 
 ## Training
-    python train_fft_tv.py --run_id=holonet_fft --perfect_prop_model=True --purely_unet=False --batch_size=1 --channel=1 
+    python train_holonet.py --channel <CHANNEL_OF_LIGHT> --run_id <EXPERIMENT_NAME> --num_epochs <EPOCHS_NUM> --lr <LEARNING_RATE> --loss_fun <LOSS_FUNCTION> --perfect_prop_model True --method <METHOD> --scale_factor <SCALE_FACTOR_OF_PIXEL_SHUFFLE> --res <IMAGE_DEFINITION>
 ## Testing
 
 ## Acknowledgement
