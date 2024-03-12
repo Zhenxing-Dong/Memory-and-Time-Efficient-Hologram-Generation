@@ -1,4 +1,4 @@
-# Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays [IEEE VR 2024]
+## Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays [IEEE VR 2024]
 
 ## Setup 
 Install the required packages using conda with the provided environment.yaml file.
