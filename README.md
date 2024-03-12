@@ -1,5 +1,5 @@
 ## Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays
-**Zhenxing Dong**<sup>1</sup>, **Jidong Jia**<sup>1</sup>, **Yan Li**<sup>1</sup>, **Yuye Ling**<sup>1</sup>
+[**Zhenxing Dong**]<sup>1</sup>, **Jidong Jia**<sup>1</sup>, **Yan Li**<sup>1</sup>, **Yuye Ling**<sup>1</sup>
 
 <sup>1</sup>Department of Electronic Engineering, Shanghai Jiao Tong University
 ## Setup 
