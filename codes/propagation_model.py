@@ -19,7 +19,7 @@ import utils.utils as utils
 from propagation_ASM import compute_zernike_basis, combine_zernike_basis, \
     propagation_ASM, propagation_ASM_zernike, propagation_ASM_zernike_fourier
 
-from utils.pytorch_prototyping.pytorch_prototyping import Conv2dSame
+from utils.pytorch_prototyping import Conv2dSame
 from utils.utils import filter2d
 
 class LatentCodedMLP(nn.Module):
