@@ -26,15 +26,16 @@ If you use this code and find our work valuable, please cite our paper.
     }
 
     @INPROCEEDINGS{10494141,
-  author={Dong, Zhenxing and Jia, Jidong and Li, Yan and Ling, Yuye},
-  booktitle={2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)}, 
-  title={Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={493-501},
-  keywords={Training;Image quality;Solid modeling;Three-dimensional displays;Computational modeling;Neural networks;Graphics processing units;Holography;User interfaces;Optical imaging;VR/AR;Holographic Displays;Computer-generated Hologram},
-  doi={10.1109/VR58804.2024.00070}}
+          author={Dong, Zhenxing and Jia, Jidong and Li, Yan and Ling, Yuye},
+          booktitle={2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)}, 
+          title={Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays}, 
+          year={2024},
+          volume={},
+          number={},
+          pages={493-501},
+          keywords={Training;Image quality;Solid modeling;Three-dimensional displays;Computational modeling;Neural networks;Graphics processing units;Holography;User interfaces;Optical imaging;VR/AR;Holographic             Displays;Computer-generated Hologram},
+  doi={10.1109/VR58804.2024.00070}
+  }
 
     
 ## Acknowledgement
