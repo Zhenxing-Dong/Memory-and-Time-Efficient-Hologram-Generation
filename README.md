@@ -28,15 +28,6 @@ If you use this code and find our work valuable, please cite our paper.
           doi={10.1109/VR58804.2024.00070}
       }
 
-      @misc{dong2024,
-      title={Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays}, 
-      author={Zhenxing Dong and Jidong Jia and Yan Li and Yuye Ling},
-      year={2024},
-      eprint={2404.10777},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
-    }
-
     
 ## Acknowledgement
 The codes are built on [neural holography](https://github.com/computational-imaging/neural-holography). We sincerely appreciate the authors for sharing their codes.
