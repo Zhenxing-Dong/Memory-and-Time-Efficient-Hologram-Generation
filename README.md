@@ -16,15 +16,6 @@ Install the required packages using conda with the provided [environment.yaml](h
 ## Citation
 If you use this code and find our work valuable, please cite our paper.
 
-    @misc{dong2024,
-          title={Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays}, 
-          author={Zhenxing Dong and Jidong Jia and Yan Li and Yuye Ling},
-          year={2024},
-          eprint={2404.10777},
-          archivePrefix={arXiv},
-          primaryClass={eess.IV}
-    }
-
     @INPROCEEDINGS{10494141,
           author={Dong, Zhenxing and Jia, Jidong and Li, Yan and Ling, Yuye},
           booktitle={2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)}, 
@@ -35,7 +26,16 @@ If you use this code and find our work valuable, please cite our paper.
           pages={493-501},
           keywords={Training;Image quality;Solid modeling;Three-dimensional displays;Computational modeling;Neural networks;Graphics processing units;Holography;User interfaces;Optical imaging;VR/AR;Holographic             Displays;Computer-generated Hologram},
           doi={10.1109/VR58804.2024.00070}
-  }
+      }
+
+      @misc{dong2024,
+      title={Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays}, 
+      author={Zhenxing Dong and Jidong Jia and Yan Li and Yuye Ling},
+      year={2024},
+      eprint={2404.10777},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+    }
 
     
 ## Acknowledgement
