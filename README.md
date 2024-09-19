@@ -34,7 +34,7 @@ If you use this code and find our work valuable, please cite our paper.
           number={},
           pages={493-501},
           keywords={Training;Image quality;Solid modeling;Three-dimensional displays;Computational modeling;Neural networks;Graphics processing units;Holography;User interfaces;Optical imaging;VR/AR;Holographic             Displays;Computer-generated Hologram},
-  doi={10.1109/VR58804.2024.00070}
+          doi={10.1109/VR58804.2024.00070}
   }
 
     
