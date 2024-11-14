@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Motion Hologram: Jointly optimized hologram generation and motion planning for photorealistic 3D displays via reinforcement learning.">
+        content="Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays.">
   <meta name="keywords" content="Holographic Displays">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Motion Hologram: Jointly optimized hologram generation and motion planning for photorealistic 3D displays via reinforcement learning</title>
+  <title>Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -48,22 +48,25 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title" style="font-size: 32px; line-height: 42px;">
-              <span style="font-size: 38px; display: block; margin-bottom: 8px;"><b>Motion Hologram</b>:</span>
-              Jointly optimized hologram generation and motion planning for photorealistic 3D displays via reinforcement learning
+              <span style="font-size: 38px; display: block; margin-bottom: 8px;"><b>Divide-Conquer-and-Merge: </b>:</span>
+              Memory- and Time-Efficient Holographic Displays
           </h1>
           <div class="is-size-5 publication-authors">
               <span class="author-block">
                   <a href="https://zhenxing-dong.github.io/">Zhenxing Dong</a>,
               </span>
               <span class="author-block">
+                  <a href="https://github.com/Zhenxing-Dong/Memory-and-Time-Efficient-Hologram-Generation">Jidong Jia</a>,
+              </span>
+              <span class="author-block">
                   <a href="http://www.yuyeling.com/">Yuye Ling</a><sup>*</sup>,
               </span>
+            
               <span class="author-block">
                   <a href="https://scholar.google.com.hk/citations?user=PkHOPS8AAAAJ&hl=zh-CN">Yan Li</a>,
               </span>
-              <span class="author-block">
-                  <a href="https://otip.sjtu.edu.cn/member/YikaiSu">Yikai Su</a>,
-              </span>
+            
+
           </div>
           
           <div class="is-size-5 publication-authors">
@@ -71,7 +74,7 @@
           </div>
          
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><strong>Under review</strong></span>
+            <span class="author-block"><strong>IEEE VR 2024</strong></span>
           </div>
 
           <br>
@@ -80,7 +83,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2401.12537v2"
+                <a href="https://ieeexplore.ieee.org/document/10494141"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -89,7 +92,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2401.12537v2"
+                <a href="https://arxiv.org/pdf/2404.10777"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -99,7 +102,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/Zhenxing-Dong/Motion-Hologram"
+                <a href="https://github.com/Zhenxing-Dong/Memory-and-Time-Efficient-Hologram-Generation"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -140,16 +143,31 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Holography is capable of rendering three-dimensional scenes with full-depth control, and 
-            delivering transformative experiences across numerous domains, including virtual and augmented reality, 
-            education, and communication. However, traditional holography presents 3D scenes with unnatural defocus and severe speckles 
-            due to the limited space bandwidth product of the spatial light modulator (SLM). Here, we introduce Motion Hologram, 
-            a novel holographic technique to accurately portray photorealistic and speckle-free 3D scenes, by leveraging a single 
-            hologram and learnable motion trajectory, which are jointly optimized within the deep reinforcement learning framework. 
-            Specifically, we experimentally demonstrated the proposed technique could achieve a 4~5 dB PSNR improvement of focal stacks in comparison 
-            with traditional holography and could successfully depict speckle-free, high-fidelity, and full-color 3D displays using 
-            only a commercial SLM for the first time. We believe the proposed method promises a new form of holographic displays 
-            that will offer immersive viewing experiences for audiences.
+            Recently, deep learning-based computer-generated holography
+            (CGH) has demonstrated tremendous potential in three-dimensional
+            (3D) displays and yielded impressive display quality. However, most
+            existing deep learning-based CGH techniques can only generate
+            holograms of 1080p resolution, which is far from the ultra-high
+            resolution (16K+) required for practical virtual reality (VR) and
+            augmented reality (AR) applications to support a wide field of view
+            and large eye box. One of the major obstacles in current CGH
+            frameworks lies in the limited memory available on consumer-grade
+            GPUs which could not facilitate the generation of higher-definition
+            holograms. To overcome the aforementioned challenge, we proposed a divide-conquer-and-merge strategy to address the memory
+            and computational capacity scarcity in ultra-high-definition CGH
+            generation. This algorithm empowers existing CGH frameworks
+            to synthesize higher-definition holograms at a faster speed while
+            maintaining high-fidelity image display quality. Both simulations
+            and experiments were conducted to demonstrate the capabilities of
+            the proposed framework. By integrating our strategy into HoloNet
+            and CCNNs, we achieved significant reductions in GPU memory usage during the training period by 64.3% and 12.9%, respectively. Furthermore, we observed substantial speed improvements
+            in hologram generation, with an acceleration of up to 3× and 2 ×,
+            respectively. Particularly, we successfully trained and inferred 8K
+            definition holograms on an NVIDIA GeForce RTX 3090 GPU for
+            the first time in simulations. Furthermore, we conducted full-color
+            optical experiments to verify the effectiveness of our method. We
+            believe our strategy can provide a novel approach for memory- and
+            time-efficient holographic displays
           </p>
         </div>
       </div>
@@ -166,12 +184,14 @@
           <h2 class="title is-3">Framework</h2>
           <div class="content has-text-justified">
             <p>
-            Here, we proposed a novel CGH technique called Motion Hologram to disrupt the spatial coherence of light source using reinforcement learning, 
-            which can thus render photorealistic and speckle-free 3D scenes by globally designing the holographic system. We reappraised the role of system motion, 
-            which was commonly believed detrimental in imaging and display, and conceptualized that the inherent speckles in holography could be neutralized and 
-            photorealistic 3D display could be achieved by spatially multiplexing the holograms via proper system motions. 
-            Specifically, a novel system design paradigm that leverages reinforcement learning to jointly generate the phase-only hologram and 
-            system’s motion trajectory were introduced, which promises an unparalleled viewing experience.
+            Here, we proposed a novel CGH generation framework to synthesize highquality and ultra-high-resolution holograms. The
+            framework consists of two main components, the phase generator and the phase encoder. For the phase generator, we employ a dividing strategy 
+            where the image is initially divided into r<sup>2</sup> sub-images with reduced resolution. These lower-definition sub-images are then
+            fed into the phase generator network to predict the corresponding phases at the target plane. The phase and amplitude are upsampled
+            and merged to synthesize a complex-valued wave field, which is subsequently propagated to the SLM plane using the angular spectrum
+            method (ASM). For the phase encoder, similar to the operations of the phase generator, we continue to apply the divide-and-conquer
+            strategy to generate a phase-only hologram. Finally, the phase-only hologram is propagated back to the target plane, and the parameters
+            of the networks are updated by calculating the loss between the ground truth (GT) and the reconstructed image.
             </p>
           </div>
           <img src="./static/images/framework.png"
@@ -185,9 +205,9 @@
     <!-- Paper video with centered title and video. -->
     <div class="columns" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
       <div class="content" style="text-align: center;">
-        <h2 class="title is-3" style="margin-top: 30px;">Experimental Video</h2>
+        <h2 class="title is-3" style="margin-top: 30px;">Live Demo</h2>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-          <source src="./static/images/video_new.mp4" type="video/mp4">
+          <source src="./static/images/demo.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -199,15 +219,17 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{dong2024motionhologramjointlyoptimized,
-      title={Motion Hologram: Jointly optimized hologram generation and motion planning for photorealistic and speckle-free 3D displays via reinforcement learning}, 
-      author={Zhenxing Dong and Yuye Ling and Yan Li and Yikai Su},
-      year={2024},
-      eprint={2401.12537},
-      archivePrefix={arXiv},
-      primaryClass={physics.optics},
-      url={https://arxiv.org/abs/2401.12537}, 
-}</code></pre>
+    <pre><code>@INPROCEEDINGS{10494141,
+  author={Dong, Zhenxing and Jia, Jidong and Li, Yan and Ling, Yuye},
+  booktitle={2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)}, 
+  title={Divide-Conquer-and-Merge: Memory- and Time-Efficient Holographic Displays}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={493-501},
+  keywords={Training;Image quality;Solid modeling;Three-dimensional displays;Computational modeling;Neural networks;Graphics processing units;Holography;User interfaces;Optical imaging;VR/AR;Holographic Displays;Computer-generated Hologram},
+  doi={10.1109/VR58804.2024.00070}}
+</code></pre>
   </div>
 </section>
 
