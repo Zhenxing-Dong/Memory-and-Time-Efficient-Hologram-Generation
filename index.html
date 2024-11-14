@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Motion Hologram: Jointly optimized hologram generation and motion planning for photorealistic 3D displays via reinforcement learning.">
+  <meta name="keywords" content="Holographic Displays">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion Hologram: Jointly optimized hologram generation and motion planning for photorealistic 3D displays via reinforcement learning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size: 32px; line-height: 42px;">
+              <span style="font-size: 38px; display: block; margin-bottom: 8px;"><b>Motion Hologram</b>:</span>
+              Jointly optimized hologram generation and motion planning for photorealistic 3D displays via reinforcement learning
+          </h1>
+          <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                  <a href="https://zhenxing-dong.github.io/">Zhenxing Dong</a>,
+              </span>
+              <span class="author-block">
+                  <a href="http://www.yuyeling.com/">Yuye Ling</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                  <a href="https://scholar.google.com.hk/citations?user=PkHOPS8AAAAJ&hl=zh-CN">Yan Li</a>,
+              </span>
+              <span class="author-block">
+                  <a href="https://otip.sjtu.edu.cn/member/YikaiSu">Yikai Su</a>,
+              </span>
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+              <span class="author-block">Shanghai Jiao Tong University</span>
+          </div>
+         
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><strong>Under review</strong></span>
+          </div>
+
+          <br>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2401.12537v2"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2401.12537v2"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Zhenxing-Dong/Motion-Hologram"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+            
+          <img src="./static/images/teaser.png"
+           class="interpolation-image"
+           alt="Interpolate start reference image."
+           width="80%"
+           style="margin-top: 40px;"/>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Holography is capable of rendering three-dimensional scenes with full-depth control, and 
+            delivering transformative experiences across numerous domains, including virtual and augmented reality, 
+            education, and communication. However, traditional holography presents 3D scenes with unnatural defocus and severe speckles 
+            due to the limited space bandwidth product of the spatial light modulator (SLM). Here, we introduce Motion Hologram, 
+            a novel holographic technique to accurately portray photorealistic and speckle-free 3D scenes, by leveraging a single 
+            hologram and learnable motion trajectory, which are jointly optimized within the deep reinforcement learning framework. 
+            Specifically, we experimentally demonstrated the proposed technique could achieve a 4~5 dB PSNR improvement of focal stacks in comparison 
+            with traditional holography and could successfully depict speckle-free, high-fidelity, and full-color 3D displays using 
+            only a commercial SLM for the first time. We believe the proposed method promises a new form of holographic displays 
+            that will offer immersive viewing experiences for audiences.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <!-- Visual Effects. -->
+      <div class="column is-four-fifths">
+        <div class="content">
+          <h2 class="title is-3">Framework</h2>
+          <div class="content has-text-justified">
+            <p>
+            Here, we proposed a novel CGH technique called Motion Hologram to disrupt the spatial coherence of light source using reinforcement learning, 
+            which can thus render photorealistic and speckle-free 3D scenes by globally designing the holographic system. We reappraised the role of system motion, 
+            which was commonly believed detrimental in imaging and display, and conceptualized that the inherent speckles in holography could be neutralized and 
+            photorealistic 3D display could be achieved by spatially multiplexing the holograms via proper system motions. 
+            Specifically, a novel system design paradigm that leverages reinforcement learning to jointly generate the phase-only hologram and 
+            system’s motion trajectory were introduced, which promises an unparalleled viewing experience.
+            </p>
+          </div>
+          <img src="./static/images/framework.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."
+          width="90%"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper video with centered title and video. -->
+    <div class="columns" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+      <div class="content" style="text-align: center;">
+        <h2 class="title is-3" style="margin-top: 30px;">Experimental Video</h2>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/images/video_new.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{dong2024motionhologramjointlyoptimized,
+      title={Motion Hologram: Jointly optimized hologram generation and motion planning for photorealistic and speckle-free 3D displays via reinforcement learning}, 
+      author={Zhenxing Dong and Yuye Ling and Yan Li and Yikai Su},
+      year={2024},
+      eprint={2401.12537},
+      archivePrefix={arXiv},
+      primaryClass={physics.optics},
+      url={https://arxiv.org/abs/2401.12537}, 
+}</code></pre>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgement</h2>
+    <p>
+      This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+</section>
+
+
+</body>
+</html>
